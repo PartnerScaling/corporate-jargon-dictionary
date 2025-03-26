@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
 }
 
-https://claude.site/artifacts/19d5fd98-44be-4b88-a752-46145703aa07:root {
+:root {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;

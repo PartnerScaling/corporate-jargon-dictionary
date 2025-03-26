@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Copy, Share2, Star } from 'react-feather';
 import { toast } from 'react-toastify';
 import { corporateJargonData } from '../data/jargonData';
-import './Categories.css';
 
 // Category descriptions and icons
 const categoryMetadata = {
@@ -259,25 +258,60 @@ const Categories = () => {
               <h3 className="phrase-text">{phrase.phrase}</h3>
               <p className="phrase-meaning">{phrase.translation || phrase.meaning}</p>
             </div>
-            <div className="card-actions">
+            <div style={{ display: 'flex', gap: '0.75rem', position: 'relative' }}>
               <button
-                className={`action-button favorite ${isFavorite(phrase) ? 'active' : ''}`}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  padding: '0.5rem',
+                  border: 'none',
+                  borderRadius: '6px',
+                  background: 'transparent',
+                  color: isFavorite(phrase) ? '#FFA000' : '#666',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                  position: 'relative',
+                  strokeWidth: isFavorite(phrase) ? 2.5 : 1.5,
+                  transform: isFavorite(phrase) ? 'scale(1.1)' : 'none'
+                }}
                 onClick={() => toggleFavorite(phrase)}
-                data-label="Favorite"
+                title="Favorite"
               >
                 <Star size={18} />
               </button>
               <button
-                className="action-button"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  padding: '0.5rem',
+                  border: 'none',
+                  borderRadius: '6px',
+                  background: 'transparent',
+                  color: '#666',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                  position: 'relative'
+                }}
                 onClick={() => handleCopyPhrase(phrase.phrase)}
-                data-label="Copy"
+                title="Copy"
               >
                 <Copy size={18} />
               </button>
               <button
-                className="action-button"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  padding: '0.5rem',
+                  border: 'none',
+                  borderRadius: '6px',
+                  background: 'transparent',
+                  color: '#666',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                  position: 'relative'
+                }}
                 onClick={() => handleSharePhrase(phrase.phrase)}
-                data-label="Share"
+                title="Share"
               >
                 <Share2 size={18} />
               </button>

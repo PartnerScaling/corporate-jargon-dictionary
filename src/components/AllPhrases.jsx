@@ -1,5 +1,6 @@
-import React, { useState, useMemo } from 'react';
-import { Star, Search, Copy, Share, Filter, X, BookOpen, AlertTriangle } from 'lucide-react';
+﻿import React, { useState, useMemo } from 'react';
+import { Star, Search, Copy, Share, Filter, X, BookOpen } from 'lucide-react';
+import { corporateJargonData } from '../data/jargonData';
 
 const AllPhrases = ({ data, favorites, onToggleFavorite, copiedPhrase, onCopyPhrase }) => {
   const [searchTerm, setSearchTerm] = useState('');
