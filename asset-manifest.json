@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/corporate-jargon-dictionary/static/css/main.3fedf881.css",
+    "main.js": "/corporate-jargon-dictionary/static/js/main.14a896ef.js",
+    "index.html": "/corporate-jargon-dictionary/index.html",
+    "main.3fedf881.css.map": "/corporate-jargon-dictionary/static/css/main.3fedf881.css.map",
+    "main.14a896ef.js.map": "/corporate-jargon-dictionary/static/js/main.14a896ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3fedf881.css",
+    "static/js/main.14a896ef.js"
+  ]
+}
