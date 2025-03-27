@@ -38,7 +38,7 @@ function App() {
           <Grid className="nav-icon" />
           <span>Categories</span>
         </NavLink>
-        <NavLink to="/bingo" className="nav-link" title="Non-sensical Bingo">
+        <NavLink to="/bingo" className="nav-link" title="JargonBingo">
           <GamepadIcon className="nav-icon" />
           <span>Non-sensical</span>
         </NavLink>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Star, BookOpen, Home, Grid, Info, AlertTriangle } from 'lucide-react';
 import { Routes, Route, NavLink } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { corporateJargonData } from './data/jargonData.js';
 import './App.css';
 
@@ -117,6 +119,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
+      <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );
 }
